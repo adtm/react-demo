@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 
 /**
- * Look at your own risk
+ * Look at your own risk,
+ * this is almost the same as:
+ *
+
+  $('#btn').click(function() {
+   if ($(this).hasClass('blue')) {
+     $(this).removeClass('blue');
+     $(this).addClass('gray');
+   } else {
+     $(this).removeClass('gray');
+     $(this).addClass('blue');
+   }
+  })
+
  * @extends Component
  */
 class Declarative extends Component {
