@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
 
-class App extends Component {
-  render() {
-    return <div>🤷‍♂️</div>;
-  }
-}
+const App = () => (
+  <Router>
+    <React.Fragment>
+      <Route exact path="/" component={Home} />
+    </React.Fragment>
+  </Router>
+);
 
 export default App;
