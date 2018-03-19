@@ -59,8 +59,6 @@ class Tabs extends React.Component {
     const tabs = this.renderTabs();
     const content = this.renderContent();
 
-    console.log(tabs);
-    console.log(content);
     return (
       <Container>
         <Card>

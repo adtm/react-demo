@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home';
-import CompoundComponents from './rewrites/CompoundComponents';
+import ContextComponents from './rewrites/ContextComponent';
 
 const App = () => (
   <Router>
     <React.Fragment>
       <Route exact path="/" component={Home} />
-      <Route path="/declarative" component={CompoundComponents} />
+      <Route path="/declarative" component={ContextComponents} />
     </React.Fragment>
   </Router>
 );
