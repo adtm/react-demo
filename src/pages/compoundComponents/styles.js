@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background: #F6F7F8
-  color: #2e3e48;
-  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial, sans-serif;
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.6;
   padding-top: 5px;
 `;

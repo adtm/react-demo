@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import {
-  Container,
   Card,
   TextContainer,
   Image,
@@ -60,12 +59,10 @@ class Tabs extends React.Component {
     const content = this.renderContent();
 
     return (
-      <Container>
-        <Card>
-          {tabs}
-          {content}
-        </Card>
-      </Container>
+      <Card>
+        {tabs}
+        {content}
+      </Card>
     );
   }
 }
