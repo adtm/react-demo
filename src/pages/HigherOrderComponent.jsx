@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import CompoundFixed from './CompoundFixed';
-
-const StyledCompoundComponents = styled(CompoundFixed)`
-  color: ${props => props.color};
-`;
 
 const withRandomColorChange = Comp => {
   const calculateColor = () => {
@@ -42,7 +37,7 @@ class HigherOrderComponent extends Component {
     const { color } = this.props;
     return (
       <div style={{ color: color }}>
-        <CompoundComponents />
+        <CompoundFixed />
       </div>
     );
   }
