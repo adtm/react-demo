@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import HigherOrderComponent from './pages/HigherOrderComponent.jsx';
 
 const Container = styled.div`
-  background: #F6F7F8
+  background: #f6f7f8;
   font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica, Arial, sans-serif;
   display: flex;

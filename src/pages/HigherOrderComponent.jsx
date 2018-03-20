@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import CompoundComponents from './CompoundComponents';
+import CompoundFixed from './CompoundFixed';
 
-const StyledCompoundComponents = styled(CompoundComponents)`
+const StyledCompoundComponents = styled(CompoundFixed)`
   color: ${props => props.color};
 `;
 
@@ -28,10 +28,6 @@ const withRandomColorChange = Comp => {
       window.addEventListener('resize', ({ target }) => {
         this.setState({ width: target.innerWidth });
       });
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('resize');
     }
 
     render() {

@@ -4,10 +4,10 @@ Compound,
 Context API,
 Declarative / Imperative
 HOC,
+Structure
+Math.random(number) as key - reconciliation
 
 TODO:
 
-RenderProps,
+RenderProps - ???
 Error Boundaries,
-Structure
-Math.random(number) as key - reconciliation

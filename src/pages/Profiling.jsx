@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import * as uuid from 'uuid';
-import importedPeople from './Profiling.json';
+import importedPeople from './profiling/people.json';
 
 import { Button, Input, Table, Container } from './profiling/styles';
 

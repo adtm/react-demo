@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
 import {
   Card,
   TextContainer,
@@ -10,7 +8,7 @@ import {
   TimeContainer,
   TabElement,
   SecretMessageText
-} from '../pages/compoundComponents/styles.js';
+} from './compoundComponents/styles';
 
 const Time = () => (
   <TimeContainer>

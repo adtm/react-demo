@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import importedPeople from './Profiling.json';
+import importedPeople from './profiling/people.json';
 import { Button, Input, Table, Container } from './profiling/styles';
 
 class Cell extends React.PureComponent {
@@ -23,7 +23,7 @@ class Cells extends React.PureComponent {
   }
 }
 
-class Profiling extends Component {
+class ProfilingFixed extends Component {
   state = {
     name: '',
     people: importedPeople
@@ -62,4 +62,4 @@ class Profiling extends Component {
   }
 }
 
-export default Profiling;
+export default ProfilingFixed;

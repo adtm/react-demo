@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  Container,
-  TabElement
-} from '../pages/compoundComponents/styles.js';
+import { Card, Container, TabElement } from './compoundComponents/styles';
 import { Time, Location, SecretMessage } from './compound/components';
 
 class Tabs extends React.Component {

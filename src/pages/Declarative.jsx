@@ -1,69 +1,33 @@
 import React, { Component } from 'react';
 
-/**
- * Look at your own risk,
- * this is almost the same as:
- *
+const ApprovalButton = ({ handleClick, text }) => (
+  <div onClick={handleClick}>{text}</div>
+);
 
-  $('#btn').click(function() {
-   if ($(this).hasClass('blue')) {
-     $(this).removeClass('blue');
-     $(this).addClass('gray');
-   } else {
-     $(this).removeClass('gray');
-     $(this).addClass('blue');
-   }
-  })
+const Button = ({ color }) => (
+  <button style={{ background: color }}>{color}</button>
+);
 
- * @extends Component
- */
 class Declarative extends Component {
   state = {
     color: 'gray',
     userApproves: false
   };
 
-  hasBlue = () => (this.state.color === 'blue' ? true : false);
-
-  addBlue = () => this.setState({ color: 'blue' });
-
-  addGrey = () => this.setState({ color: 'grey' });
-
-  removeBlue = () => this.setState({ color: '' });
-
-  removeGray = () => this.setState({ color: '' });
-
-  userDoesNotApprove = () => this.setState({ userApproves: false });
+  changeUserApproval = () =>
+    this.setState(({ userApproves, color }) => ({
+      userApproves: !userApproves,
+      color: userApproves && color === 'blue' ? 'gray' : 'blue'
+    }));
 
   render() {
-    const { userApproves } = this.state;
     return (
       <div>
-        <button
-          onClick={() =>
-            this.setState(prevState => ({
-              userApproves: !prevState.userApproves
-            }))
-          }>
-          I approve button!
-        </button>
-        <p>
-          {(() => {
-            if (userApproves) {
-              if (this.hasBlue()) {
-                this.removeBlue();
-                this.addGrey();
-              } else {
-                this.removeGray();
-                this.addBlue();
-              }
-              this.userDoesNotApprove();
-            }
-          })()}
-          <button style={{ background: this.state.color }}>
-            Ma color is {this.state.color}
-          </button>
-        </p>
+        <ApprovalButton
+          handleClick={this.changeUserApproval}
+          text="I approve button!"
+        />
+        <Button color={this.state.color} />
       </div>
     );
   }

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Card,
-  Container,
-  TabElement
-} from '../pages/compoundComponents/styles.js';
+import { Card, Container, TabElement } from './compoundComponents/styles';
 import { Time, Location, SecretMessage } from './compound/components';
 
 class Tabs extends React.Component {
@@ -12,34 +8,24 @@ class Tabs extends React.Component {
     activeIndex: 1
   };
 
-  static childContextTypes = {
-    activeIndex: PropTypes.number.isRequired,
-    onTabSelect: PropTypes.func.isRequired
-  };
-
-  getChildContext() {
-    return {
-      activeIndex: this.state.activeIndex,
-      onTabSelect: this.selectActiveIndex
-    };
-  }
-
   selectActiveIndex = index => this.setState({ activeIndex: index });
 
   render() {
-    return this.props.children;
+    const children = React.Children.map(this.props.children, child => {
+      return React.cloneElement(child, {
+        onTabSelect: this.selectActiveIndex,
+        activeIndex: this.state.activeIndex
+      });
+    });
+    return children;
   }
 }
 
 class TabList extends React.Component {
-  static contextTypes = {
-    onTabSelect: PropTypes.func.isRequired
-  };
-
   render() {
     const children = React.Children.map(this.props.children, (child, index) => {
       return React.cloneElement(child, {
-        onSelect: () => this.context.onTabSelect(index)
+        onSelect: () => this.props.onTabSelect(index)
       });
     });
     return children;
@@ -63,13 +49,9 @@ class TabContent extends React.Component {
 }
 
 class TabContents extends React.Component {
-  static contextTypes = {
-    activeIndex: PropTypes.number.isRequired
-  };
-
   render() {
     const { children } = this.props;
-    const { activeIndex } = this.context;
+    const { activeIndex } = this.props;
     return children[activeIndex];
   }
 }
@@ -79,6 +61,7 @@ class NewTabs extends React.Component {
     return (
       <Card>
         <Tabs>
+          {/* This Line */}
           <div>
             <TabList>
               <Tab>Location</Tab>
