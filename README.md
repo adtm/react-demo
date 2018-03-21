@@ -18,4 +18,5 @@ Error Boundaries,
 Revisit:
 
 Profiling - X,
+Context API - X,
 Higher Order Component - X,

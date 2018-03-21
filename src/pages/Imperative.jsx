@@ -48,7 +48,7 @@ class Imperative extends Component {
         >
           I approve button!
         </button>
-        <p>
+        <div>
           {(() => {
             if (userApproves) {
               if (this.hasBlue()) {
@@ -64,7 +64,7 @@ class Imperative extends Component {
           <button style={{ background: this.state.color }}>
             Ma color is {this.state.color}
           </button>
-        </p>
+        </div>
       </div>
     );
   }

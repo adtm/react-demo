@@ -6,6 +6,7 @@ function loadStories() {
   require('../stories/Declarative.jsx');
   require('../stories/HigherOrder.jsx');
   require('../stories/Profiling.jsx');
+  require('../stories/ErrorBoundaries.jsx');
 }
 
 configure(loadStories, module);

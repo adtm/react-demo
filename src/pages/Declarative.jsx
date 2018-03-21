@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const ApprovalButton = ({ handleClick, text }) => (
-  <div onClick={handleClick}>{text}</div>
+  <button onClick={handleClick}>{text}</button>
 );
 
 const Button = ({ color }) => (
@@ -10,8 +10,7 @@ const Button = ({ color }) => (
 
 class Declarative extends Component {
   state = {
-    color: 'gray',
-    userApproves: false
+    color: 'gray'
   };
 
   changeUserApproval = () =>
