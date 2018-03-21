@@ -43,7 +43,7 @@ class ContextSolution extends Component {
     return (
       <Container>
         <div style={{ color: 'red' }}>
-          <h3>Today's Info: </h3>
+          <h3>Today {'\''} s Info: </h3>
           <CardContainer>
             <Time />
             <Location />
