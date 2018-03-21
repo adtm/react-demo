@@ -18,7 +18,7 @@
     "indent": ["warn", 2],
     "linebreak-style": ["warn", "unix"],
     "quotes": ["error", "single"],
-    "semi": ["error", "always"],    
+    "semi": ["error", "always"],
     "no-unused-expressions": "warn",
     "no-useless-concat": "warn",
     "no-confusing-arrow": "off",
@@ -28,7 +28,12 @@
     "react/forbid-prop-types": "off",
     "object-curly-newline": "off",
     "arrow-parens": "off",
+
     "react/no-typos": "off",
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/no-multi-comp": "off",
+    "react/prefer-stateless-function": "off",
     "max-len": [2, 200, 4, {"ignoreUrls": true}]
   }
 }

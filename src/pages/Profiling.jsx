@@ -15,6 +15,10 @@ const Cells = ({ peopleList }) =>
     return <Cell key={`${person}-${i}`} name={person} index={i + 1} />;
   });
 
+
+//-----
+
+
 class Profiling extends Component {
   state = {
     name: '',

@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import CompoundFixed from './CompoundFixed';
 
+// const adder = (y) => {
+//   return function(x) {
+//     return x + y
+//   }
+// }
+
 const withRandomColorChange = Comp => {
   const calculateColor = () => {
     return (
-      'rgb(' +
-      Math.floor(Math.random() * 256) +
-      ',' +
-      Math.floor(Math.random() * 256) +
-      ',' +
-      Math.floor(Math.random() * 256) +
-      ')'
+      `rgb(${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)})`
     );
   };
 
@@ -32,11 +34,15 @@ const withRandomColorChange = Comp => {
   };
 };
 
+
+//------
+
+
 class HigherOrderComponent extends Component {
   render() {
     const { color } = this.props;
     return (
-      <div style={{ color: color }}>
+      <div style={{ color }}>
         <CompoundFixed />
       </div>
     );
