@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { ColorButton, TriggerButton } from '../../components/declarative/styles';
 
-const ApprovalButton = ({ handleClick, text }) => (
-  <button onClick={handleClick}>{text}</button>
+
+const ChangeButton = ({ handleClick, text }) => (
+  <TriggerButton onClick={handleClick}>{text}</TriggerButton>
 );
 
 const Button = ({ color }) => (
-  <button style={{ background: color }}>{color}</button>
+  <ColorButton style={{ background: color }}>{color}</ColorButton>
 );
 
 class Declarative extends Component {
@@ -22,9 +24,9 @@ class Declarative extends Component {
   render() {
     return (
       <div>
-        <ApprovalButton
+        <ChangeButton
           handleClick={this.changeUserApproval}
-          text="I approve button!"
+          text="Let's switch it!"
         />
         <Button color={this.state.color} />
       </div>

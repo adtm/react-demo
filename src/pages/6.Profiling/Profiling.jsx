@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import importedPeople from './profiling/people.json';
+import importedPeople from '../../components/profiling/people.json';
 
-import { Button, Input, Table, Container } from './profiling/styles';
+import { Button, Input, Table, Container } from '../../components/profiling/styles';
 
 const Cell = ({ name, index }) => (
   <tr>

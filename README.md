@@ -20,3 +20,5 @@ Revisit:
 Profiling - X,
 Context API - X,
 Higher Order Component - X,
+Error Boundaries - X,
+Declarative vs Imperative - X,

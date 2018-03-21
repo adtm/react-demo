@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Time, Location, SecretMessage } from './compound/components';
-import { Card } from './compoundComponents/styles';
+import { Time, Location, SecretMessage } from '../../components/compound/Styled';
+import { Card } from '../../components/compound/styles';
 
 
 class Container extends Component {

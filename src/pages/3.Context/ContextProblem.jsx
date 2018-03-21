@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Time, Location, SecretMessage } from './compound/components';
+import { Time, Location, SecretMessage } from '../../components/compound/Styled';
 
 class CompoundRework extends Component {
   render() {

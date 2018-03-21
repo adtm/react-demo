@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  TabElement
-} from './compoundComponents/styles';
-import { Time, Location, SecretMessage } from './compound/components';
+import { Card, TabElement } from '../../components/compound/styles';
+import { Time, Location, SecretMessage } from '../../components/compound/Styled';
 
 
 class Tabs extends React.Component {

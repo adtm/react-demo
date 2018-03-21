@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 
 import Container from './Container.styles';
 
-import ContextProblem from '../src/pages/ContextProblem';
-import ContextHalfSolution from '../src/pages/ContextHalfSolution';
-import ContextSolution from '../src/pages/ContextSolution';
+import ContextProblem from '../src/pages/3.Context/ContextProblem';
+import ContextHalfSolution from '../src/pages/3.Context/ContextHalfSolution';
+import ContextSolution from '../src/pages/3.Context/ContextSolution';
 
 storiesOf('Context', module)
   .addDecorator(story =>

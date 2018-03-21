@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Container, TabElement } from './compoundComponents/styles';
-import { Time, Location, SecretMessage } from './compound/components';
+import { Card, TabElement } from '../../components/compound/styles';
+import { Time, Location, SecretMessage } from '../../components/compound/Styled';
 
 class Tabs extends React.Component {
   state = {
@@ -66,15 +66,9 @@ class NewTabs extends React.Component {
             <Tab>Secret Message</Tab>
           </TabList>
           <TabContents>
-            <TabContent>
-              <Location />
-            </TabContent>
-            <TabContent>
-              <Time />
-            </TabContent>
-            <TabContent>
-              <SecretMessage />
-            </TabContent>
+            <TabContent><Location /></TabContent>
+            <TabContent><Time /></TabContent>
+            <TabContent><SecretMessage /></TabContent>
           </TabContents>
         </Tabs>
       </Card>

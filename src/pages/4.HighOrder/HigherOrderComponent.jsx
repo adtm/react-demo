@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CompoundFixed from './CompoundFixed';
+import CompoundFixed from '../2.Compound/CompoundFixed';
 
 // const adder = (y) => {
 //   return function(x) {

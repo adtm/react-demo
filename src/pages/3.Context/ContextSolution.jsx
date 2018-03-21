@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Time, Location, SecretMessage } from './compound/components';
-import { Card } from './compoundComponents/styles';
+import { Time, Location, SecretMessage } from '../../components/compound/Styled';
+import { Card } from '../../components/compound/styles';
 
 class CardContainer extends Component {
   static contextTypes = {

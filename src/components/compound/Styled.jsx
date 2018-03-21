@@ -4,7 +4,7 @@ import {
   Address,
   TimeContainer,
   SecretMessageText
-} from '../../pages/compoundComponents/styles';
+} from './styles';
 
 const Time = ({ handleClick }) => (
   <TimeContainer onClick={handleClick}>
@@ -21,6 +21,6 @@ const Location = ({ handleClick }) => (
   </LocationContainer>
 );
 
-const SecretMessage = ({ handleClick }) => <SecretMessageText onClick={handleClick}>You won! 🤩</SecretMessageText>;
+const SecretMessage = ({ handleClick }) => <SecretMessageText onClick={handleClick}>You are awesome! 🍕</SecretMessageText>;
 
 export { Time, Location, SecretMessage };

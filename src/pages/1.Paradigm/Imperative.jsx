@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ColorButton, TriggerButton } from '../../components/declarative/styles';
 
 /**
  * Look at your own risk,
@@ -39,32 +40,32 @@ class Imperative extends Component {
     const { userApproves } = this.state;
     return (
       <div>
-        <button
+        <TriggerButton
           onClick={() =>
             this.setState(prevState => ({
               userApproves: !prevState.userApproves
             }))
           }
         >
-          I approve button!
-        </button>
-        <div>
-          {(() => {
-            if (userApproves) {
-              if (this.hasBlue()) {
-                this.removeBlue();
-                this.addGrey();
-              } else {
-                this.removeGray();
-                this.addBlue();
-              }
-              this.userDoesNotApprove();
+          Let{'\''}s switch it!
+        </TriggerButton>
+
+        {(() => {
+          if (userApproves) {
+            if (this.hasBlue()) {
+              this.removeBlue();
+              this.addGrey();
+            } else {
+              this.removeGray();
+              this.addBlue();
             }
-          })()}
-          <button style={{ background: this.state.color }}>
-            Ma color is {this.state.color}
-          </button>
-        </div>
+            this.userDoesNotApprove();
+          }
+        })()}
+        <ColorButton style={{ background: this.state.color }}>
+          {this.state.color}
+        </ColorButton>
+
       </div>
     );
   }
