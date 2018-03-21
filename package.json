@@ -4,6 +4,8 @@
   "author": "Tomas Eglinskas",
   "private": true,
   "dependencies": {
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "normalize.css": "^8.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -20,7 +22,6 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
-    "@storybook/react": "^3.3.15",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",

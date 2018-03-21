@@ -1,8 +1,11 @@
 import { configure } from '@storybook/react';
 
 function loadStories() {
-  require('../stories/index.jsx');
-  // You can require as many stories as you need.
+  require('../stories/Compound.jsx');
+  require('../stories/Context.jsx');
+  require('../stories/Declarative.jsx');
+  require('../stories/HigherOrder.jsx');
+  require('../stories/Profiling.jsx');
 }
 
 configure(loadStories, module);

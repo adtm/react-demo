@@ -23,7 +23,7 @@ class Imperative extends Component {
     userApproves: false
   };
 
-  hasBlue = () => (this.state.color === 'blue' ? true : false);
+  hasBlue = () => (this.state.color === 'blue');
 
   addBlue = () => this.setState({ color: 'blue' });
 
@@ -44,7 +44,8 @@ class Imperative extends Component {
             this.setState(prevState => ({
               userApproves: !prevState.userApproves
             }))
-          }>
+          }
+        >
           I approve button!
         </button>
         <p>
