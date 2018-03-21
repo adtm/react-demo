@@ -18,6 +18,8 @@ const Card = styled.div`
   border-radius: 20px;
   width: 300px;
   padding: 20px;
+  max-height: 90px;
+  margin: 40px;
 `;
 
 const TextContainer = styled.div`
@@ -78,5 +80,5 @@ export {
   Address,
   TimeContainer,
   TabElement,
-  SecretMessageText,
+  SecretMessageText
 };

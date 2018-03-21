@@ -3,13 +3,16 @@ import { storiesOf } from '@storybook/react';
 
 import Container from './Container.styles';
 
-import Context from '../src/pages/Context';
-import ContextFixed from '../src/pages/ContextFixed';
+import ContextProblem from '../src/pages/ContextProblem';
+import ContextHalfSolution from '../src/pages/ContextHalfSolution';
+import ContextSolution from '../src/pages/ContextSolution';
 
 storiesOf('Context', module)
   .addDecorator(story =>
     <Container fullWidth>{story()}</Container>)
-  .add('with breaking', () =>
-    <Context />)
-  .add('without breaking', () =>
-    <ContextFixed />);
+  .add('our problem', () =>
+    <ContextProblem />)
+  .add('our half solution', () =>
+    <ContextHalfSolution />)
+  .add('our full solution', () =>
+    <ContextSolution />);
