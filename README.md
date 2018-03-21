@@ -1,24 +1,23 @@
-DONE:
+### Prerequisites
 
-Compound,
-Context API,
-Declarative / Imperative
-HOC,
-Structure
-Math.random(number) as key - reconciliation
+What things you need to install the software and how to install them
 
-TODO:
+```
+yarn && yarn storybook
+```
 
-RenderProps - ???
-Error Boundaries,
+### Topics
 
+- Profiling
+- Context API
+- Higher Order Component, (HOC)
+- Error Boundaries
+- Compound Components
+- Declarative vs Imperative
 
-//---
+if you want more! 🧐
 
-Revisit:
-
-Profiling - X,
-Context API - X,
-Higher Order Component - X,
-Error Boundaries - X,
-Declarative vs Imperative - X,
+- Render Props
+- Fractal Structure
+- GraphQL + React
+- React 16.3-alfa

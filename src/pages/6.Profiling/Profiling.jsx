@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import importedPeople from '../../components/profiling/people.json';
-
 import { Button, Input, Table, Container } from '../../components/profiling/styles';
 
 const Cell = ({ name, index }) => (
